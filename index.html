@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Find your next unforgettable escape with Roamly travel experiences and holiday packages.">
+<title>Roamly — Find Your Somewhere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Roamly home"><span class="brand-mark"><span>✳</span></span> roamly.</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a><a href="#packages">Holiday packages</a><a href="#experiences">Experiences</a><a href="#reviews">Our travellers</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#packages">Plan my trip <span>↗</span></a>
+  </div>
+</header>
+
+<main id="home">
+  <div class="container hero">
+    <div class="hero-panel">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2000&q=85" alt="Turquoise alpine lake surrounded by dramatic mountains">
+      <div class="hero-content">
+        <div class="hero-kicker"><i></i> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p>Thoughtfully planned escapes for curious souls. Discover places that stay with you long after you return.</p>
+        <div class="hero-actions"><a class="btn btn-lime" href="#destinations">Explore destinations <span>↗</span></a><a class="btn btn-ghost" href="#packages">View our packages</a></div>
+      </div>
+      <div class="hero-note">
+        <div class="avatar-stack">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80" alt="">
+        </div><div><strong>Loved by 2,400+ explorers</strong><small>Real trips. Lasting memories.</small></div>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <form class="search-bar" id="tripSearch">
+        <div class="search-field"><label for="destinationSelect">Where to?</label><select id="destinationSelect"><option value="">Choose a destination</option><option>Bali, Indonesia</option><option>Swiss Alps, Switzerland</option><option>Kyoto, Japan</option><option>Amalfi Coast, Italy</option><option>Rajasthan, India</option><option>Maldives</option></select></div>
+        <div class="search-field"><label for="travelStyle">Travel style</label><select id="travelStyle"><option>Any experience</option><option>Adventure</option><option>Culture & food</option><option>Beach & relax</option><option>Nature & wildlife</option></select></div>
+        <div class="search-field"><label for="travelMonth">When are you going?</label><input id="travelMonth" type="month" aria-label="Travel month"></div>
+        <button class="btn" type="submit">Find my trip <span>→</span></button>
+      </form>
+    </div>
+  </div>
+
+  <section id="destinations">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">A world of wonder</p><h2>Places worth the journey</h2></div><p class="section-intro">From slow island mornings to mountain air that takes your breath away, your next favourite place is out there.</p></div>
+      <div class="destination-grid">
+        <article class="destination-card"><div class="destination-image"><span class="tag">ISLAND ESCAPE</span><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Tropical Balinese temple surrounded by lush greenery" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Bali, Indonesia</h3><span>✦ 4.9</span></div><p>Jungle temples, emerald rice terraces and sunset shores.</p><div class="destination-foot"><span>Best for: <b>Slow living</b></span><a href="#packages">Explore ↗</a></div></div></article>
+        <article class="destination-card"><div class="destination-image"><span class="tag">MOUNTAIN AIR</span><img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=80" alt="Snowy mountain peaks under a colourful alpine sky" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Swiss Alps</h3><span>✦ 4.9</span></div><p>Storybook villages, scenic railways and epic alpine trails.</p><div class="destination-foot"><span>Best for: <b>Adventure</b></span><a href="#packages">Explore ↗</a></div></div></article>
+        <article class="destination-card"><div class="destination-image"><span class="tag">CULTURE & CALM</span><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt="Traditional Kyoto street with a pagoda and historic architecture" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Kyoto, Japan</h3><span>✦ 4.8</span></div><p>Lantern-lit lanes, serene gardens and unforgettable flavours.</p><div class="destination-foot"><span>Best for: <b>Culture</b></span><a href="#packages">Explore ↗</a></div></div></article>
+        <article class="destination-card"><div class="destination-image"><span class="tag">COASTAL CHARM</span><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Colourful coastal villages perched above the Italian sea" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Amalfi Coast, Italy</h3><span>✦ 4.8</span></div><p>Pastel villages, sparkling blue water and long lunches.</p><div class="destination-foot"><span>Best for: <b>Romance</b></span><a href="#packages">Explore ↗</a></div></div></article>
+        <article class="destination-card"><div class="destination-image"><span class="tag">ROYAL TRAILS</span><img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80" alt="Ornate historic palace architecture in Rajasthan, India" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Rajasthan, India</h3><span>✦ 4.9</span></div><p>Desert sunsets, grand forts and vibrant local markets.</p><div class="destination-foot"><span>Best for: <b>Heritage</b></span><a href="#packages">Explore ↗</a></div></div></article>
+        <article class="destination-card"><div class="destination-image"><span class="tag">BAREFOOT BLISS</span><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Overwater villas and turquoise lagoon in the Maldives" loading="lazy"></div><div class="destination-info"><div class="destination-title"><h3>Maldives</h3><span>✦ 5.0</span></div><p>Clear lagoons, coral gardens and days with nowhere to be.</p><div class="destination-foot"><span>Best for: <b>Unwinding</b></span><a href="#packages">Explore ↗</a></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Good trips, thoughtfully made</p><h2>Packages with a little more soul</h2></div><p class="section-intro">The essentials are taken care of, so you can spend less time planning and more time being there.</p></div>
+      <div class="package-grid">
+        <article class="package-card"><div class="package-top"><span class="package-type">Island reset</span><span class="package-days">6 days · 5 nights</span></div><h3>Bali, beyond the beach</h3><p>Find your rhythm between rainforest, culture and coast.</p><div class="price"><strong>₹42,999</strong><span>/ person</span></div><ul class="features"><li>Boutique hotel stay with breakfast</li><li>Ubud rice terrace & temple tour</li><li>Sunset coast experience</li><li>Airport transfers included</li></ul><a class="btn" href="#contact">Enquire about Bali ↗</a></article>
+        <article class="package-card"><div class="package-top"><span class="package-type">Alpine adventure</span><span class="package-days">7 days · 6 nights</span></div><h3>Swiss scenic escape</h3><p>Mountain views, charming towns and journeys by rail.</p><div class="price"><strong>₹1,24,999</strong><span>/ person</span></div><ul class="features"><li>Comfortable 3-star stays</li><li>Scenic train travel pass</li><li>Guided alpine village walk</li><li>Daily breakfast included</li></ul><a class="btn" href="#contact">Enquire about Switzerland ↗</a></article>
+        <article class="package-card"><div class="package-top"><span class="package-type">Culture trip</span><span class="package-days">5 days · 4 nights</span></div><h3>Japan, at your own pace</h3><p>Ancient traditions, hidden lanes and a taste of Kyoto.</p><div class="price"><strong>₹76,499</strong><span>/ person</span></div><ul class="features"><li>Central Kyoto hotel stay</li><li>Tea ceremony experience</li><li>Local food walk with a guide</li><li>Rail transfer assistance</li></ul><a class="btn" href="#contact">Enquire about Japan ↗</a></article>
+      </div>
+      <p style="color:var(--muted);font-size:.78rem;margin-top:18px">* Sample starting prices per person, based on twin sharing. Flights, dates, availability and inclusions may affect final pricing.</p>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Collect moments, not checklists</p><h2>Travel that feels like you</h2></div><p class="section-intro">The little moments often become the big memories. Pick a feeling and we'll help you find it.</p></div>
+      <div class="experience-grid">
+        <article class="experience-feature"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85" alt="Hikers exploring a dramatic mountain range" loading="lazy"><div class="experience-copy"><p class="eyebrow">For the wild at heart</p><h3>Take the scenic route</h3><p>Find new perspective on mountain trails, forest paths and wide-open landscapes.</p></div></article>
+        <div class="experience-side">
+          <article class="experience-small"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Colourful food ready to share" loading="lazy"><div><p class="eyebrow">Taste the place</p><h3>Food & local culture</h3><p>Meet makers, share tables and follow your appetite.</p></div></article>
+          <article class="experience-small"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=700&q=80" alt="Gentle waves rolling onto a peaceful beach" loading="lazy"><div><p class="eyebrow">Make room to breathe</p><h3>Slow days by the sea</h3><p>Switch off, sink in and let the days unfold.</p></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Kind words, real journeys</p><h2>Don't just take our word for it</h2></div><p class="section-intro">The best part of our work is hearing what travellers take home with them.</p></div>
+      <div class="review-grid">
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Everything felt considered without ever feeling over-planned. Bali gave us the kind of memories you can't put a price on.”</blockquote><div class="reviewer"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Portrait of traveller Ananya" loading="lazy"><div><strong>Ananya M.</strong><span>Bali · Couple's escape</span></div></div></article>
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“The local guide was incredible. We saw places we would never have found on our own, and every detail just worked.”</blockquote><div class="reviewer"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Portrait of traveller Rohan" loading="lazy"><div><strong>Rohan K.</strong><span>Japan · Culture trip</span></div></div></article>
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“A perfect balance of adventure and downtime. The Swiss views were unreal, and planning was refreshingly easy.”</blockquote><div class="reviewer"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80" alt="Portrait of traveller Meera" loading="lazy"><div><strong>Meera S.</strong><span>Switzerland · Alpine escape</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-panel">
+        <div><p class="eyebrow">Your somewhere is calling</p><h2>Let's make a plan<br>worth looking forward to.</h2><p>Tell us what kind of trip you're dreaming about. We'll help you turn the maybe-someday into a real itinerary.</p><div class="contact-details"><a href="mailto:hello@roamly.example">✉ hello@roamly.example</a><a href="tel:+919876543210">☎ +91 98765 43210</a><span>⌖ Pune, India · Planning trips worldwide</span></div></div>
+        <form class="contact-form" id="contactForm">
+          <label>Your name<input name="name" type="text" placeholder="How should we call you?" required></label>
+          <label>Email address<input name="email" type="email" placeholder="you@example.com" required></label>
+          <label>Where are you dreaming of?<input name="destination" type="text" placeholder="A place, a feeling, or just 'surprise me'"></label>
+          <label>Tell us a little more<textarea name="message" placeholder="Dates, travel style, who's coming…"></textarea></label>
+          <button class="btn" type="submit">Send your travel brief ↗</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-row"><a class="brand" href="#home"><span class="brand-mark"><span>✳</span></span> roamly.</a><span>© 2026 Roamly Travel Co. Made for curious souls.</span><div class="footer-links"><a href="#destinations">Destinations</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div></div></footer>
+
+</body>
+</html>
